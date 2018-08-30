@@ -1,5 +1,9 @@
 'use strict';
 
-module.exports = {
-  name: 'bubbles-admin'
-};
+/*jshint node:true*/
+const EngineAddon = require('ember-engines/lib/engine-addon');
+
+module.exports = EngineAddon.extend({
+  name: 'bubbles-admin',
+  lazyLoading: false
+});
